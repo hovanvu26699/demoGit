@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            // GET
+            $('#get-text-btn').click(function () {
+                alert($('#test-line').text())
+            })
+
+            $('#get-html-btn').click(function () {
+                alert($('#test-line').html())
+            })
+
+            $('#get-value-btn').click(function () {
+                alert($('#username-input').val())
+            })
+
+            $('#get-attr-btn').click(function () {
+                alert($('#test-line').attr('style'))
+            })
+
+            // SET
+            $('#set-value-btn').click(function () {
+                $('#username-input').val('sfkdbvm c')
+            })
+
+            // $('#get-html-btn').click(function () {
+            //     alert($('#test-line').html())
+            // })
+
+            // $('#get-value-btn').click(function () {
+            //     alert($('#username-input').val())
+            // })
+
+            // $('#get-attr-btn').click(function () {
+            //     alert($('#test-line').attr('style'))
+            // })
+
+            // ADD
+            $('#append-btn').click(function () {
+                $('#test-line').append(' sfkdbvm c')
+            })
+
+            $('#after-btn').click(function () {
+                $('#test-line').after(' sfkdbvm c')
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <p id="test-line" style="background-color:antiquewhite; padding: 8px;">This is <b>TEST</b> line</p>
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username-input" value="Quang cute">
+    <h4>GET</h4>
+    <button id="get-text-btn">Get Text</button>
+    <button id="get-html-btn">Get HTML</button>
+    <button id="get-value-btn">Get Value</button>
+    <button id="get-attr-btn">Get Attr</button>
+
+    <h4>SET</h4>
+    <button id="set-text-btn">Set Text</button>
+    <button id="set-html-btn">Set HTML</button>
+    <button id="set-value-btn">Set Value</button>
+    <button id="set-attr-btn">Set Attr</button>
+
+    <h4>ADD</h4>
+    <button id="append-btn">Append Text</button>
+    <button id="after-btn">After Text</button>
+</body>
+
+</html>

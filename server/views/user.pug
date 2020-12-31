@@ -1,0 +1,14 @@
+html
+  head
+    title Login
+    style
+      include styles.css
+  body
+    div(class="LogIn")
+      form(action = "/login", method = "post")
+        p Login Form
+        input(type="text", id="user", placeholder="Username", name="username") 
+        br
+        input(type="password", id="pass", placeholder="Password", name="password")
+        br
+        button(id="btn") Submit
